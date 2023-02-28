@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Outfit:wght@300;400;600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:390px;
+    height:645px;
+    border-radius: 20px;
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: 0px 30px 100px 20px hsl(215, 55%, 8%);
+    box-shadow:aquamarine
+}
+.content{
+    width:330px;
+    height:580px;
+}
+.image{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+.eye{
+    visibility: hidden;
+    height:60px;
+    width: 60px;
+    position:absolute;
+}
+.filter{
+    visibility: hidden;
+    z-index: -1;
+    border-radius: 20px;
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-color: cyan;
+}
+.image:hover .filter{
+    opacity: 0.5;
+    visibility: visible;
+    z-index: 0;
+}
+.image:hover .eye {
+    visibility: visible;
+    z-index: 3;
+}
+img{
+    width:100%;
+    border-radius: 20px;
+}
+.text{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    color:hsl(215, 51%, 70%);
+}
+.downline{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content:first baseline;
+    align-items: center;
+}
+.avatar{
+    border-radius: 100%;
+    border:solid 1px white;
+    
+    width:40px;
+    margin-right:20px;
+}
+
+.avatarcontainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+}
+.days{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+h3{
+    text-align:right;
+    color:hsl(178, 100%, 50%);
+}
+h2{
+    color:white;
+}
+h2:hover{
+    color:cyan;
+}
+b{
+    color:white;
+}
+b:hover{
+    color:cyan;
+}
+.line{
+    height:1px;
+    background-color: white;
+    opacity: 0.1;
+}
